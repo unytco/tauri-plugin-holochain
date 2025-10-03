@@ -17,8 +17,8 @@ kitsune2_api = "0.2"
 kitsune2_core = "0.2"
 
 # Lair dependencies
-lair_keystore_api = { version = "0.6.0", default-features = false }
-lair_keystore = { version = "0.6.0", default-features = false }
+lair_keystore_api = { version = "0.6.3", default-features = false }
+lair_keystore = { version = "0.6.3", default-features = false }
 
 # Holochain client
 holochain_client = { version = "0.8.0-dev", default-features = false }

@@ -5,7 +5,7 @@ edition = "2021"
 
 [dependencies]
 # Holochain dependencies
-holochain = { version = "0.6.0-dev", default-features = false, features = [ "unstable-functions", "wasmer_sys", "backend-go-pion" ] }
+holochain = { version = "0.6.0-dev", default-features = false, features = [ "wasmer_sys" ] }
 mr_bundle = {version = "0.6.0-dev", default-features = false }
 holochain_types = {version = "0.6.0-dev", default-features = false }
 holochain_keystore = {version = "0.6.0-dev", default-features = false }
@@ -47,3 +47,5 @@ anyhow = "1"
 default = ["sqlite-encrypted"]
 sqlite = ["holochain/sqlite", "lair_keystore/rusqlite-bundled"]
 sqlite-encrypted = ["holochain/sqlite-encrypted", "lair_keystore/rusqlite-bundled-sqlcipher-vendored-openssl"]
+backend-go-pion = ["holochain/backend-go-pion"] 
+datachannel-vendored = ["holochain/datachannel-vendored"]

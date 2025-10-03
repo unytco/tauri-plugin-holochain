@@ -48,5 +48,3 @@ tauri-plugin = { version = "2.0.0", features = ["build"] }
 default = ["sqlite-encrypted"]
 sqlite = ["holochain_runtime/sqlite"]
 sqlite-encrypted = ["holochain_runtime/sqlite-encrypted"]
-datachannel-vendored = ["holochain_runtime/datachannel-vendored"]
-backend-go-pion = ["holochain_runtime/backend-go-pion"]

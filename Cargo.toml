@@ -1,7 +1,12 @@
 [workspace]
 members = ["crates/*"]
 resolver = "2"
-exclude = [ "examples/end-user-happ", "examples/holochain-runtime" ]
+exclude = [
+     "examples/end-user-happ",
+     "examples/holochain-runtime" ,
+     "crates/scaffold-holochain-runtime" , 
+     "crates/scaffold-tauri-happ"
+]
 
 [patch.crates-io]
 kitsune2 = { git = "https://github.com/guillemcordoba/kitsune2", branch = "iroh-transport-v0.3" }

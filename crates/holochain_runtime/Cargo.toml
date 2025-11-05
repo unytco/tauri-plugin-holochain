@@ -13,8 +13,8 @@ holochain_conductor_api = {version = "0.6.0-dev", default-features = false }
 holochain_util = {version = "0.6.0-dev", default-features = false }
 
 kitsune_p2p_mdns = { path = "../mdns" }
-kitsune2_api = "=0.3.0-dev.3"
-kitsune2_core = "=0.3.0-dev.3"
+kitsune2_api = "0.3.0"
+kitsune2_core = "0.3.0"
 
 # Lair dependencies
 lair_keystore_api = { version = "0.6.3", default-features = false }

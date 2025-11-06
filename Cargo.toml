@@ -8,10 +8,22 @@ exclude = [
      "crates/scaffold-tauri-happ"
 ]
 
-[patch.crates-io]
-kitsune2 = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
-kitsune2_api = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
-kitsune2_core = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
-kitsune2_dht = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
-kitsune2_gossip = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
-kitsune2_bootstrap_client = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# [patch.crates-io]
+# kitsune2 = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# kitsune2_api = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# kitsune2_core = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# kitsune2_dht = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# kitsune2_gossip = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+# kitsune2_bootstrap_client = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
+
+holochain = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+mr_bundle = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_types = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_keystore = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_conductor_api = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_util = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_metrics = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_nonces = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_sercure_primitives = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_timestamp = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_trace = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }

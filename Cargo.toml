@@ -16,7 +16,7 @@ exclude = [
 # kitsune2_gossip = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
 # kitsune2_bootstrap_client = { git = "https://github.com/holochain/kitsune2", branch = "refactor/do-not-block-peers-by-default" }
 
-holochain = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" , default-features = false, features = [ "sqlite-encrypted", "wasmer_sys", "backend-go-pion" ] }
 mr_bundle = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 holochain_types = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 holochain_keystore = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }

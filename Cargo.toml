@@ -2,7 +2,12 @@
 members = [
      "crates/tauri-plugin-holochain", 
      "crates/holochain_runtime",
-     "crates/mdns"
+     "crates/mdns",
+     "crates/hc-pilot",
+     "crates/scaffold-holochain-runtime",
+     "crates/scaffold-tauri-happ",
+     "examples/holochain-runtime/src-tauri",
+     "examples/end-user-happ/src-tauri"
 ]
 resolver = "2"
 # exclude = [

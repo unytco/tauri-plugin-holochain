@@ -12,6 +12,7 @@ pub use error::*;
 pub use filesystem::*;
 pub use happs::update::UpdateHappError;
 pub use holochain_conductor_api::conductor::NetworkConfig;
+pub use holochain_conductor_api::conductor::ReportConfig;
 pub use holochain_conductor_api::ZomeCallParamsSigned;
 pub use holochain_runtime::*;
 pub use lair_signer::*;

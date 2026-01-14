@@ -5,38 +5,38 @@ edition = "2021"
 
 [dependencies]
 # Holochain dependencies
-# holochain = { version = "0.6.0-dev", default-features = false, features = [ "sqlite-encrypted", "wasmer_sys", "backend-go-pion" ] }
-# mr_bundle = {version = "0.6.0-dev", default-features = false }
-# holochain_types = {version = "0.6.0-dev", default-features = false }
-# holochain_keystore = {version = "0.6.0-dev", default-features = false }
-# holochain_conductor_api = {version = "0.6.0-dev", default-features = false }
-# holochain_util = {version = "0.6.0-dev", default-features = false }
-holochain = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" , default-features = false, features = [ "sqlite-encrypted", "wasmer_sys", "backend-go-pion" ] }
-mr_bundle = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
-holochain_types = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
-holochain_keystore = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
-holochain_conductor_api = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
-holochain_util = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain = { version = "0.6.0", default-features = false, features = [ "sqlite-encrypted", "wasmer_sys", "backend-go-pion" ] }
+mr_bundle = {version = "0.6.0", default-features = false }
+holochain_types = {version = "0.6.0", default-features = false }
+holochain_keystore = {version = "0.6.0", default-features = false }
+holochain_conductor_api = {version = "0.6.0", default-features = false }
+holochain_util = {version = "0.6.0", default-features = false }
+# holochain = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" , default-features = false, features = [ "sqlite-encrypted", "wasmer_sys", "backend-go-pion" ] }
+# mr_bundle = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+# holochain_types = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+# holochain_keystore = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+# holochain_conductor_api = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+# holochain_util = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 
 
 kitsune_p2p_mdns = { path = "../mdns" }
 # kitsune2 = "=0.3.0-dev.3"
-kitsune2 = { version = "=0.3.0-dev.3", default-features = false, features = ["backend-go-pion"] }
-kitsune2_api = "=0.3.0-dev.3"
-kitsune2_core = "=0.3.0-dev.3"
-kitsune2_dht = "=0.3.0-dev.3"
-kitsune2_gossip = "=0.3.0-dev.3"
-kitsune2_bootstrap_client = "=0.3.0-dev.3"
-# kitsune2_transport_tx5 = "=0.3.0-dev.3"
-kitsune2_transport_tx5 = { version = "=0.3.0-dev.3", default-features = false, features = ["backend-go-pion"] }
+kitsune2 = { version = "=0.3.2", default-features = false, features = ["backend-go-pion"] }
+kitsune2_api = "=0.3.2"
+kitsune2_core = "=0.3.2"
+kitsune2_dht = "=0.3.2"
+kitsune2_gossip = "=0.3.2"
+kitsune2_bootstrap_client = "=0.3.2"
+# kitsune2_transport_tx5 = "=0.3.2"
+kitsune2_transport_tx5 = { version = "=0.3.2", default-features = false, features = ["backend-go-pion"] }
 
 # Lair dependencies
 lair_keystore_api = { version = "0.6.3", default-features = false }
 lair_keystore = { version = "0.6.3", default-features = false }
 
 # Holochain client
-# holochain_client = { version = "0.8.0-dev", default-features = false }
-holochain_client = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
+holochain_client = { version = "0.8.0", default-features = false }
+# holochain_client = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 
 # Other dependencies
 tracing = { version = "0.1", features = ["log", "log-always"] }

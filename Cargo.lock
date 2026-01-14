@@ -1936,8 +1936,9 @@ checksum = "0ce7134b9999ecaf8bcd65542e436736ef32ddca1b3e06094cb6ec5755203b80"
 
 [[package]]
 name = "fixt"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "20f2db2cbe99353c4c5e26046ebcb77e0335bd0b70a79bf963ca7ff97e8f0658"
 dependencies = [
  "holochain_serialized_bytes",
  "lazy_static",
@@ -2583,8 +2584,9 @@ dependencies = [
 
 [[package]]
 name = "hdi"
-version = "0.7.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.7.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c318d6153db1a7d77b0dea6c89a74345bac9d7ada3046f539e21cc00e4d243db"
 dependencies = [
  "getrandom 0.3.4",
  "hdk_derive",
@@ -2602,8 +2604,9 @@ dependencies = [
 
 [[package]]
 name = "hdk"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3c5a6731e79600361357cf9abc22ffd12d54036534592e9ffaff1da1fed453a"
 dependencies = [
  "getrandom 0.3.4",
  "hdi",
@@ -2619,8 +2622,9 @@ dependencies = [
 
 [[package]]
 name = "hdk_derive"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c3b9cecd43529636ef83f04becec2d0aa44d9489feee4ae918934a6785e6e002"
 dependencies = [
  "darling 0.21.3",
  "heck 0.5.0",
@@ -2667,8 +2671,9 @@ dependencies = [
 
 [[package]]
 name = "holo_hash"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8d4d7ada0089a52dc48498e4deab38c056b665a666b5f8717161c8d0248fd31e"
 dependencies = [
  "base64 0.22.1",
  "blake2b_simd",
@@ -2692,8 +2697,9 @@ dependencies = [
 
 [[package]]
 name = "holochain"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2b69fcc76ad9206c6e6caf0e49f8b033bb88c8c8790cc0144df3174f3bc0c085"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2775,8 +2781,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_cascade"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ebd8b6b61ddb8dfd47d704480ece0140f22e698f5ac6ea1de651429579f3306b"
 dependencies = [
  "async-trait",
  "fixt",
@@ -2801,8 +2808,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_chc"
-version = "0.3.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "760f6929214bdaa7af36fb9879de3eac6ee0106ebc651edae70d314b2580d729"
 dependencies = [
  "async-trait",
  "derive_more 2.0.1",
@@ -2826,8 +2834,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_client"
-version = "0.8.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d6d087091c63d418f41fd2f065262d1994f496d960078e7aade43ce09f4e4cec"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -2840,7 +2849,6 @@ dependencies = [
  "holochain_websocket",
  "holochain_zome_types",
  "kitsune2_api",
- "lair_keystore_api",
  "parking_lot",
  "rand 0.8.5",
  "serde",
@@ -2850,8 +2858,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_conductor_api"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4b26c6f904fbeed71fc65059e259704c95b807c27f03c6fd59cd3b8166ded5f2"
 dependencies = [
  "derive_more 2.0.1",
  "holo_hash",
@@ -2876,8 +2885,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_conductor_config"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "792605b446543d458d00c82b94d95e74a64b600b26ce2afdfa7d527674cbf113"
 dependencies = [
  "ansi_term",
  "anyhow",
@@ -2893,8 +2903,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_integrity_types"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "23114491d121f97fe2d5095b412cfcb84c009187bfe1fcaca6c32ff0119f1a4b"
 dependencies = [
  "derive_builder",
  "holo_hash",
@@ -2912,8 +2923,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_keystore"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "788bc4d6249f03bbaf3e3003fdb8cbb1fabefc7a4ccd156e13891ab97b3252bc"
 dependencies = [
  "base64 0.22.1",
  "derive_more 2.0.1",
@@ -2940,8 +2952,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_metrics"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "ebb58d2e933d7797879191671cf17539fb532385f1a2f231fe12cea87585e3f7"
 dependencies = [
  "opentelemetry_api",
  "tracing",
@@ -2949,8 +2962,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_nonce"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "75da59d1c721c95502fee9a346a34fab6fd6364a39eb5e78f19688ff9cb9abbb"
 dependencies = [
  "getrandom 0.3.4",
  "holochain_secure_primitive",
@@ -2959,8 +2973,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_p2p"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b0172204dffcf65f29826b6bd47082e1970ae623c22c626d31b0f48b3bf216d0"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
@@ -3040,8 +3055,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_secure_primitive"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9e28bdc1ec5fc4a8a7d96a95d12762297fe5c819b881273b2927d2fa19456ded"
 dependencies = [
  "paste",
  "serde",
@@ -3075,8 +3091,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_sqlite"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c1aa0a5bdc8e85e16d2867ef3be51e9e3a7d5e3e8fc5783602fbf59d561f9493"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -3117,8 +3134,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_state"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c024c6acfd21c330600dcdbb3388d7c351c917ef998331dbb7adafd2f594f06c"
 dependencies = [
  "async-recursion",
  "chrono",
@@ -3146,8 +3164,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_state_types"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "bda33d9f4c38cc8b155e0cb6f100935624e9dacdf1f40a7411c8321d8c83008f"
 dependencies = [
  "holo_hash",
  "holochain_integrity_types",
@@ -3156,8 +3175,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_timestamp"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f6baf669811b4b70912408b9191127836a1a38c9ea690bcaa4c245d09fcf9253"
 dependencies = [
  "chrono",
  "rusqlite",
@@ -3166,8 +3186,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_trace"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3ec6a516d857ccc4e4894b9aebb82bfe679a03343dfba1c1011a737a837de2d3"
 dependencies = [
  "chrono",
  "derive_more 2.0.1",
@@ -3182,8 +3203,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_types"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "b8bdeb03038e8766a31eaea7b8056f3ba05cea579f21ca6f27b3419eaea99680"
 dependencies = [
  "anyhow",
  "async-trait",
@@ -3229,8 +3251,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_util"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d10cf3ca40b04f1e180817d9b059d1fe11b3e05e3127c0a5f0ad4651ddad6cb"
 dependencies = [
  "backtrace",
  "cfg-if 1.0.4",
@@ -3290,8 +3313,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_websocket"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "98b31a46b64bb9d9ae0574aa0f43b039c573081670b0d37f30678b0bcc6e56a8"
 dependencies = [
  "async-trait",
  "bytes",
@@ -3308,8 +3332,9 @@ dependencies = [
 
 [[package]]
 name = "holochain_zome_types"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d2b31902b3b626e91bfcc0f102bd04fe065eca18f10dab4b15e058d55cd5958f"
 dependencies = [
  "derive_builder",
  "derive_more 2.0.1",
@@ -3883,9 +3908,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7914a4e8d048ffba9762ace3e58fef73b0a68b5e4b2c3c57100ec549402dfd1e"
+checksum = "08507fdd9ffb11c3c1cbb4c329bcac4ea096a2a2abb5975321a191da5f58b649"
 dependencies = [
  "bytes",
  "kitsune2_api",
@@ -3897,9 +3922,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_api"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "43ae0f0bbfed0be8a204c5c2e624286d7eba020aaa390b69929ecfdc114ac3fe"
+checksum = "03cba55879590ae1cf869665fc5e9422e6e03eb24e0c860538595c8fccf01da7"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -3914,9 +3939,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_bootstrap_client"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "654e72d9cef55e8cc31600022b0dad0ef86b73cf98d5fe60a4285fb503cd0028"
+checksum = "e45965c0af07b8448f08f54de0b56bc9029b93d155c99247a2cd0421de9f31b9"
 dependencies = [
  "base64 0.22.1",
  "kitsune2_api",
@@ -3929,9 +3954,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_core"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0b8b09e18aa0d40837e716f52dee69131f29159f02683f348377db0e78eae9d9"
+checksum = "de548761a5cb92f4b0a357e532262780c5d1fd9cfb7b3d84ba8cd1981d09d3ab"
 dependencies = [
  "bytes",
  "ed25519-dalek",
@@ -3949,9 +3974,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_dht"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0d34b306be3d032d065d416e2c7bb73f2c8cd1e3f7649036c3f5d337e1183af9"
+checksum = "71eea2968e2fea1ef7da70d2e91ae8702f324ece3ba1a47b5406020e52fcee21"
 dependencies = [
  "bytes",
  "kitsune2_api",
@@ -3960,9 +3985,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_gossip"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0cb237747bed25f36d57e5b4ee6bb7d411c71737540757e87b86ccaef4013dd0"
+checksum = "30650d8f8fd24b237bc0f534fa555cd45f71885900600988f99c708df3b38324"
 dependencies = [
  "bytes",
  "futures",
@@ -3980,9 +4005,9 @@ dependencies = [
 
 [[package]]
 name = "kitsune2_transport_tx5"
-version = "0.3.0-dev.3"
+version = "0.3.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8b94be75d7317a4c8019b2130bbde6e83d026a20ee093951533a321de316684a"
+checksum = "1e51b676d50fb0c4e125318580123c88b6adf76384fc8fd32995b54f8e0bfa33"
 dependencies = [
  "base64 0.22.1",
  "bytes",
@@ -4498,8 +4523,9 @@ checksum = "7843ec2de400bcbc6a6328c958dc38e5359da6e93e72e37bc5246bf1ae776389"
 
 [[package]]
 name = "mr_bundle"
-version = "0.6.0-rc.0"
-source = "git+https://github.com/holochain/holochain?branch=chore/downgrade-kitsune2-to-0.3.0-dev.3#672866f24c1347674949a61defcb1eb0345fc936"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3c37488b9e75bf10de7fcea730b4fbfaab95c7b1325b227025363d4c9c06df12"
 dependencies = [
  "bytes",
  "dunce",

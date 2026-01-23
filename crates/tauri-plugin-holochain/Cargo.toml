@@ -11,7 +11,7 @@ links = "tauri-plugin-holochain"
 tauri = { version = "2.1.1" }
 
 # Holochain dependencies
-holochain_types = { version = "0.6.0", default-features = false }
+holochain_types = { version = "0.6.1-rc.0", default-features = false }
 # holochain_types = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 
 # Lair dependencies
@@ -19,7 +19,7 @@ hc_seed_bundle = "0.3"
 lair_keystore_api = { version = "0.6.3", default-features = false }
 
 # Holochain client
-holochain_client = { version = "0.8.0", default-features = false }
+holochain_client = { version = "0.8.1-rc.0", default-features = false }
 # holochain_client = { git = "https://github.com/holochain/holochain", branch = "chore/downgrade-kitsune2-to-0.3.0-dev.3" }
 
 holochain_runtime = { path = "../holochain_runtime", default-features = false }

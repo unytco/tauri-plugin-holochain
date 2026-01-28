@@ -22,14 +22,14 @@ pub fn conductor_config(
     // config.device_seed_lair_tag = Some(DEVICE_SEED_LAIR_KEYSTORE_TAG.into());
     // config.dpki = DpkiConfig::disabled();
 
-    if let None = network_config.advanced {
-        let advanced_config = serde_json::json!({
-            "tx5Transport": {
-                "signalAllowPlainText": true,
-            },
-        });
-        network_config.advanced = Some(advanced_config);
-    }
+    // if let None = network_config.advanced {
+    //     let advanced_config = serde_json::json!({
+    //         "tx5Transport": {
+    //             "signalAllowPlainText": true,
+    //         },
+    //     });
+    //     network_config.advanced = Some(advanced_config);
+    // }
     config.network = network_config;
 
     // TODO: uncomment when we can set a custom origin for holochain-client-rust

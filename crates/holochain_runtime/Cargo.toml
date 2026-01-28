@@ -26,7 +26,7 @@ holochain_util = {version = "=0.6.1-rc.0", default-features = false }
 
 
 kitsune_p2p_mdns = { path = "../mdns" }
-kitsune2 = "=0.4.0-dev.2"
+kitsune2 = { version = "=0.4.0-dev.2", default-features = false, features = ["transport-iroh"] }
 # kitsune2 = { version = "=0.4.0-dev.2", default-features = false }
 kitsune2_api = "^0.4.0-dev.2"
 kitsune2_core = "=0.4.0-dev.2"
@@ -35,6 +35,7 @@ kitsune2_core = "=0.4.0-dev.2"
 # kitsune2_bootstrap_client = "=0.4.0-dev.2"
 # kitsune2_transport_tx5 = "=0.3.2"
 # kitsune2_transport_tx5 = { version = "=0.4.0-dev.2", default-features = false }
+# kitsune2_transport_tx5 = { version = "=0.4.0-dev.2", default-features = false, features = ["transport-iroh"] }
 
 # Lair dependencies
 lair_keystore_api = { version = "0.6.3", default-features = false }

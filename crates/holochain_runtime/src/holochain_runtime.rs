@@ -468,15 +468,18 @@ impl HolochainRuntime {
     }
 
     /// Export the raw 32-byte seed for the hc-auth agent key.
-    /// Retrieves the seed from the Lair store, decrypts it with the
-    /// store's context key, and returns the plaintext bytes.
+    /// Reads the persisted key file from disk (works regardless of auth status),
+    /// looks up the seed in the Lair store, decrypts it, and returns the plaintext bytes.
     #[cfg(feature = "hc-auth")]
     pub async fn export_agent_seed(&self) -> crate::Result<Vec<u8>> {
         use lair_keystore_api::lair_store::LairEntryInner;
 
-        let agent_key = self
-            .hc_auth_agent_key()
-            .ok_or_else(|| crate::Error::AgentSeedError("No hc-auth agent key available".into()))?;
+        let key_path = self.filesystem.app_data_dir.join("hc-auth-agent-key");
+        let key_str = std::fs::read_to_string(&key_path)
+            .map_err(|e| crate::Error::AgentSeedError(format!("No agent key file found: {e}")))?;
+        let agent_key = holochain_client::AgentPubKey::try_from(key_str.trim()).map_err(|e| {
+            crate::Error::AgentSeedError(format!("Invalid agent key in file: {e:?}"))
+        })?;
 
         let mut pub_key_32 = [0u8; 32];
         pub_key_32.copy_from_slice(agent_key.get_raw_32());

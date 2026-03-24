@@ -156,7 +156,23 @@ pub(crate) async fn launch_holochain_runtime(
                 }
             }
         } else {
-            (HcAuthStatus::Failed("Not configured".into()), None, None)
+            log::info!("hc-auth: Not configured, creating agent key without auth flow");
+            match hc_auth::get_or_create_auth_key(&lair_client_clone, &filesystem.app_data_dir)
+                .await
+            {
+                Ok(agent_key) => {
+                    let raw = hc_auth::agent_pub_key_to_raw_ed25519_b64url(&agent_key);
+                    (
+                        HcAuthStatus::Failed("Not configured".into()),
+                        Some(agent_key),
+                        Some(raw),
+                    )
+                }
+                Err(e) => {
+                    log::error!("Failed to create agent key: {e}");
+                    (HcAuthStatus::Failed("Not configured".into()), None, None)
+                }
+            }
         }
     };
 
